@@ -27,7 +27,11 @@ function getpcNumber (min = 1, max = 5, isMaxIncluded){
   console.log(pcNumber);
 
 //Fare la sommatoria dei valori
-
+function getSum (playerNumber , pcNumber){
+  return playerNumber + pcNumber;
+}
+const sum = getSum (playerNumber, pcNumber);
+console.log(sum);
 //Dire se il risultato è pari o dispari?
 
 //TODO CHI HA VINTO?
