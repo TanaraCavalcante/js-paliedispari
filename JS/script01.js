@@ -9,8 +9,16 @@ const result = document.querySelector('p');
 
 //TODO ELABORAZIONE
 //Elaborare la funzione
-
+let wordReverse = '';
+function getReverse(){
+ for (let i = wordField.length -1; i >=0 ; i--){
+    wordReverse += wordField[i];
+ }
+ return wordReverse;
+}
+console.log(wordReverse);
 
 //Creare l'evento di reazione al 'click'
+
 
 //TODO OUTPUT
