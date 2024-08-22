@@ -34,17 +34,21 @@ const sum = getSum (playerNumber, pcNumber);
 console.log(sum);
 
 //Dire se il risultato è pari o dispari?
-function isWinner (sum){ 
+
+function isWinner(?){ 
     let message;
-    if(sum % 2 === 0){
+    if(getSum % 2 === 0){
         message = 'Ha vinto <b>Pari</b>!'
     }else{
         message = 'Ha vinto <b>Dispari</b>!'
     }
+    console.log(message);
+    //TODO OUTPUT
+    result2.innerHTML = `<p>${playerNumber}</p>
+                         b> ${message} </b>`
 }
-console.log(message);
 
-//TODO OUTPUT
+
 
 
  
