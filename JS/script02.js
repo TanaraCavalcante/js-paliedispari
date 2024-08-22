@@ -9,11 +9,25 @@ Dichiariamo chi ha vinto.*/
 const result2 = document.getElementById('result2');
 
 //TODO RACCOLTA DATI
-const question = parseInt(prompt('Pari o Dispari?'));
+const question = parseInt(prompt('Pari o Dispari?', 'pari'));
 
 //TODO CALCOLO
-//Generare i valori random sia per l'utente che per pc
+//Generare i valori random per l'utente
+  function getplayerNumber (min = 1, max = 5, isMaxIncluded){
+    return Math.floor(Math.random() * (max - min + 1)) + min;  //fórmula passada em aula 22/08!
+  }
+  const playerNumber = getplayerNumber(1, 5, true);
+  console.log(playerNumber);
+
+//Generare i valori random per il pc
+function getpcNumber (min = 1, max = 5, isMaxIncluded){
+    return Math.floor(Math.random() * (max - min + 1)) + min;  //fórmula passada em aula 22/08!
+  }
+  const pcNumber = getpcNumber(1, 5, true);
+  console.log(pcNumber);
+
 //Fare la sommatoria dei valori
+
 //Dire se il risultato è pari o dispari?
 
 //TODO CHI HA VINTO?

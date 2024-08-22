@@ -14,6 +14,7 @@ function getReverse(){
     let word = wordField.value;
     let wordReverse = '';
     let message = 'Diversa!';
+
  for (let i = word.length -1; i >=0 ; i--){
     wordReverse += word[i];
     //condizione
@@ -21,6 +22,7 @@ function getReverse(){
         message = 'Palidroma!'
     }
  }
+ 
  //stampa em console
  console.log(word + ' ' + wordReverse);
  console.log(message);  
