@@ -10,15 +10,27 @@ const result = document.querySelector('p');
 //TODO ELABORAZIONE
 //Elaborare la funzione
 let wordReverse = '';
+
 function getReverse(){
  for (let i = wordField.length -1; i >=0 ; i--){
     wordReverse += wordField[i];
+    //condizione
+    let message = 'Le parole non sono Palidroma!';
+    if (wordField === wordReverse){
+        message = 'Le parole sono Palidroma!'
+    }
  }
- return wordReverse;
+
+ console.log(wordField);
+ console.log(wordReverse);
+ console.log(message);
+ return ;
 }
-console.log(wordReverse);
-
-//Creare l'evento di reazione al 'click'
-
 
 //TODO OUTPUT
+//Creare l'evento di reazione al 'click'
+btnReverse.addEventListener('click', function(getReverse){ //! Perchè "getReverse" è spento?
+    result.innerHTML = `<p>${wordField} ${wordReverse}</p>
+                        <p>${message}</p>`;
+})
+
