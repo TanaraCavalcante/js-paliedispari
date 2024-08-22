@@ -8,3 +8,9 @@ const btnReverse = document.querySelector('buttton');
 const result = document.querySelector('p');
 
 //TODO ELABORAZIONE
+//Elaborare la funzione
+
+
+//Creare l'evento di reazione al 'click'
+
+//TODO OUTPUT
