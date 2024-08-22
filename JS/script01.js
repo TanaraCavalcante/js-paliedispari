@@ -21,9 +21,10 @@ function getReverse(){
     }
  }
 
+ //! Perchè non vedo il "consol.log" em console?
  console.log(wordField);
  console.log(wordReverse);
- console.log(message);
+ console.log(message);  
  return ;
 }
 
